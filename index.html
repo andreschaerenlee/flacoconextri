@@ -1,0 +1,332 @@
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Conextri </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		
+		
+		<!-- encabezado whatsapp -->
+		
+		<style>
+        /* Estilo del botón flotante de WhatsApp */
+        .whatsapp-chat {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .whatsapp-button {
+            background-color: #25D366;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            position: relative;
+        }
+
+        .whatsapp-button img {
+            width: 35px;
+            height: 35px;
+        }
+
+        /* Estilo del tooltip (mensaje emergente) elegante */
+        .tooltip {
+            visibility: hidden;
+            background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente */
+            color: #fff;
+            text-align: center;
+            border-radius: 8px; /* Bordes redondeados */
+            padding: 8px 12px;
+            position: absolute;
+            left: -180px; /* Coloca el tooltip más cerca del botón */
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1001;
+            white-space: nowrap;
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease; /* Transición suave */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra elegante */
+            font-size: 14px;
+            font-family: Arial, sans-serif; /* Fuente moderna */
+        }
+
+        /* Añadimos un pequeño triángulo en el tooltip */
+        .tooltip::after {
+            content: '';
+            position: absolute;
+            left: 100%; /* Mueve el triángulo a la derecha del tooltip */
+            top: 50%;
+            transform: translateY(-50%);
+            border-width: 6px;
+            border-style: solid;
+            border-color: transparent transparent transparent rgba(0, 0, 0, 0.8); /* Triángulo */
+        }
+
+        /* Mostrar el tooltip cuando el usuario pasa el mouse sobre el botón */
+        .whatsapp-button:hover .tooltip {
+            visibility: visible;
+            opacity: 1;
+            transform: translate(-5px, -50%); /* Animación de deslizamiento suave */
+        }
+
+    </style>
+		
+	</head>
+	<body class="is-preload">
+	
+	
+	<!-- Botón flotante de WhatsApp -->
+    <div class="whatsapp-chat">
+        <a href="https://wa.me/593959953931?text=Hola%20en%20qué%20te%20puedo%20ayudar,%20quiero%20más%20información!" target="_blank" class="whatsapp-button">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp">
+            <span class="tooltip">Chatea con nosotros</span> <!-- Mensaje emergente -->
+        </a>
+    </div>
+	
+	
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Logo -->
+						<h1><a href="index.html" id="logo">
+						<img src="images/conetrix.png" alt="Arcana Logo" style="width: 250px; height: auto;">
+						</a>
+						</h1>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li class="current"><a href="index.html">Inicio</a></li>
+								
+								<li><a href="left-sidebar.html">Asesoría Contable</a></li>
+								<li><a href="right-sidebar.html">Declaración de Impuestos</a></li>
+								<li><a href="two-sidebar.html">Firmas Electrónicas</a></li>
+								<li><a href="no-sidebar.html">Facturación Electrónica</a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+			<!-- Banner -->
+				<section id="banner">
+					<header>
+						<h2>Conextri     <em>   &nbsp;&nbsp;Expertos en gerencia tributaria <a href=""></a></em></h2>
+				<!--	<a href="#" class="button">Learn More</a> -->
+					</header>
+				</section>
+
+			<!-- Highlights -->
+				<section class="wrapper style1">
+					<div class="container">
+						<div class="row gtr-200">
+							<section class="col-4 col-12-narrower">
+								<div class="box highlight">
+									<i class="icon solid major fa-paper-plane"></i>
+									<h3>Asesoria Contable</h3>
+
+								</div>
+							</section>
+							<section class="col-4 col-12-narrower">
+								<div class="box highlight">
+									<i class="icon solid major fa-pencil-alt"></i>
+									<h3>Asesoría Fiscal y Tributaria</h3>
+
+								</div>
+							</section>
+							<section class="col-4 col-12-narrower">
+								<div class="box highlight">
+									<i class="icon solid major fa-wrench"></i>
+									<h3>Asesoría Económico Financiera</h3>
+								</div>
+							</section>
+						</div>
+					</div>
+				</section>
+
+			<!-- Gigantic Heading -->
+				<section class="wrapper style2">
+					<div class="container">
+						<header class="major">
+							<h2>EN QUÉ PODEMOS AYUDARTE</h2>
+							<p>Soluciones Integrales para tí y tu Empresa</p>
+						</header>
+					</div>
+				</section>
+
+			<!-- Posts -->
+				<section class="wrapper style1">
+					<div class="container">
+						<div class="row">
+							<section class="col-6 col-12-narrower">
+								<div class="box post">
+									<a href="#" class="image left"><img src="images/pic01.jpg" alt=""  class="imagen"/></a>
+									<div class="inner">
+										<h3>Asesoría Contable y Tributaria</h3>
+										<p style="text-align: justify;">Cumpliendo con las normativas fiscales y contables vigentes, con el objetivo de facilitarle una contabilidad clara y eficiente que impulse su crecimiento empresarial.</p>
+									</div>
+								</div>
+							</section>
+							<section class="col-6 col-12-narrower">
+								<div class="box post">
+									<a href="#" class="image left"><img src="images/pic02.jpg" alt="" class="imagen" /></a>
+									<div class="inner">
+										<h3>Declaración de Impuestos</h3>
+										<p style="text-align: justify;" >Asistimos en la preparación y presentación de declaraciones de impuestos, garantizando que sus declaraciones sean precisas y puntuales.</p>
+									</div>
+								</div>
+							</section>
+						</div>
+						<div class="row">
+							<section class="col-6 col-12-narrower">
+								<div class="box post">
+									<a href="#" class="image left"><img src="images/pic03.jpg" alt="" class="imagen" /></a>
+									<div class="inner">
+										<h3>Facturación Electrónica</h3>
+										<p style="text-align: justify;" >Te ayudamos a implementar y gestionar un sistema eficiente para la emisión, recepción y almacenamiento de comprobantes electrónicos, asegurando la validéz legal y fiscal.</p>
+									</div>
+								</div>
+							</section>
+							<section class="col-6 col-12-narrower">
+								<div class="box post">
+									<a href="#" class="image left"><img src="images/pic04.jpg" alt="" class="imagen" /></a>
+									<div class="inner">
+										<h3>Firmas Electrónicas</h3>
+										<p style="text-align: justify;"> Implementación de firmas electrónicas válidas en Ecuador dondepodrás firmar contratos, facturas y otros documentos de manera digital.</p>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</section>
+
+			<!-- CTA -->
+				<section id="cta" class="wrapper style3">
+					<div class="container">
+						<header>
+							<h2>Cambiate a CONEXTRI</h2>
+					<br>
+					<br>
+					
+        <img src="images/curso.jpg" width="500" height="600">
+	
+						</header>
+						
+						
+						
+						
+					</div>
+				</section>
+
+		<!--	 Footer -->
+				<div id="footer">
+					<div class="container">
+						<div class="row">
+							<section class="col-3 col-6-narrower col-12-mobilep">
+							 <div align="center">
+							<img src="images/conetrix.png" alt="Arcana Logo" style="width: 80px; height: auto; ">
+							</div>
+								<h3> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DÓNDE ESTAMOS</h3>
+								<ul class="links">
+									<li>
+								<i class="fas fa-phone" style="color: #003366;"></i> <span>&nbsp;&nbsp 0959953931</span>
+							</li>
+							
+							<li>
+								<i class="fas fa-phone" style="color: #003366;"></i> <span>&nbsp;&nbsp 0985466484</span>
+							</li>
+							
+							<li>
+								<i class="fas fa-envelope" style="color: #003366;"></i> <span>&nbsp;&nbsp conextri@conextri.com</span>
+							</li>
+							
+							
+							<li>
+								<i class="fas fa-globe" style="color: #003366;"></i> <span>&nbsp;&nbsp http://conextri.com/</span>
+							</li>
+							
+							<li>
+								<i class="fas fa-map-marker-alt" style="color: #003366;"></i> <span>&nbsp;&nbsp Av. Quevedo y Av. Abraham Calazacón, a 20 metros del Banco Pichincha, Santo Domingo de los Colorados, Ecuador, 230203</span>
+							</li>
+							
+							
+								</ul>
+							</section>
+					<!--		<section class="col-3 col-6-narrower col-12-mobilep">
+								<h3>More Links to Stuff</h3>
+								<ul class="links">
+									<li><a href="#">Duis neque nisi dapibus</a></li>
+									<li><a href="#">Sed et dapibus quis</a></li>
+									<li><a href="#">Rutrum accumsan sed</a></li>
+									<li><a href="#">Mattis et sed accumsan</a></li>
+									<li><a href="#">Duis neque nisi sed</a></li>
+									<li><a href="#">Sed et dapibus quis</a></li>
+									<li><a href="#">Rutrum amet varius</a></li>
+								</ul>
+							</section>    -->
+							<section class="col-6 col-12-narrower">
+								<h3>Ponte en contacto con nuestro Equipo</h3>
+								<form>
+									<div class="row gtr-50">
+										<div class="col-6 col-12-mobilep">
+											<input type="text" name="Nombre" id="Nombre" placeholder="Nombre" />
+										</div>
+										<div class="col-6 col-12-mobilep">
+											<input type="email" name="email" id="Correo Electrónico" placeholder="Email" />
+										</div>
+										<div class="col-12">
+											<textarea name="message" id="message" placeholder="Mensaje" rows="5"></textarea>
+										</div>
+										<div class="col-12">
+											<ul class="actions">
+												<li><input type="submit" class="button alt" value="Enviar Mensaje" /></li>
+											</ul>
+										</div>
+									</div>
+								</form>
+							</section>
+						</div>
+					</div>
+
+					<!-- Icons -->
+						<ul class="icons">
+							<li><a href="https://www.tiktok.com/@mgs.alexandra_moreano" class="icon brands fa-tiktok"><span class="label">Tik Tok</span></a></li>
+							<li><a href="https://www.facebook.com/conextri.ec" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.youtube.com/@Conextri" class="icon brands fa-youtube"><span class="label">GitHub</span></a></li>
+							
+						</ul>
+
+					<!-- Copyright -->
+						<div class="copyright">
+							<ul class="menu">
+								<li>&copy; Conextri. Todos los derechos reservados</li><li>Diseño: <a>PYMES Tech</a></li>
+							</ul>
+						</div>
+
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
